@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tea Bliss - E-Commerce</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #3e8e41;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 2rem;
+      background-color: #dff0d8;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #3e8e41;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2e7031;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin-top: 1rem;
+    }
+
+    form label {
+      margin-top: 1rem;
+    }
+
+    form input, form textarea {
+      padding: 0.5rem;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Tea Bliss</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#">Cart 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Welcome to Tea Bliss</h2>
+    <p>Discover premium organic teas made with love 🍵</p>
+  </section>
+
+  <!-- Product Listing -->
+  <section id="products">
+    <h2>Our Teas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tea Name</th>
+          <th>Description</th>
+          <th>Price (Ksh)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Green Tea</td>
+          <td>Fresh and organic with antioxidants</td>
+          <td>250</td>
+          <td><button>Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>Masala Chai</td>
+          <td>Spiced black tea with Indian flavor</td>
+          <td>300</td>
+          <td><button>Add to Cart</button></td>
+        </tr>
+        <tr>
+          <td>Herbal Tea</td>
+          <td>Caffeine-free blend with calming herbs</td>
+          <td>275</td>
+          <td><button>Add to Cart</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Customer Registration Form -->
+  <section id="register" class="form-section">
+    <h2>Customer Registration</h2>
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="address">Delivery Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tea Bliss. All rights reserved.</p>
+  </footer>
+</body>
+</html>
